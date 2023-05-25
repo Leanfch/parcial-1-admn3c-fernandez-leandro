@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'PT Mono', monospace;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 96vh;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #252229;
+}
+
+ul {
+  list-style-type: none;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+.titleLista {
+  margin-bottom: 3rem;
+  border-bottom: 5px white solid;
+  text-align: center;
+}
+
+.divTitle {
+  width: 100%;
+}
+
+.welcomeTitle {
+  font-size: 60px;
+  display: inline-block;
+  margin: 0 12px 2rem 0;
+}
+
+.nameTitle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'PT Mono', monospace;
+}
+
+.inputTarea {
+  background-color: transparent;
+  color: white;
+  width: 28rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.inputTarea:focus {
+  border: none;
+  outline: none;
+  color: rgb(209, 209, 209);
+}
+
+.inputTarea::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+.nameTitle::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+.nameTitle:hover {
+  background-color: #1a1a1a;
+}
+
+.nameTitle:focus {
+  outline: transparent;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: red;
+}
+
+.incompleto {
+  color: rgb(222, 89, 89);
+}
+
+.completo {
+  color: rgb(51, 171, 83);
+}
+
+.tareaTitle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.divBtnBorrar {
+  margin-left: auto;
+}
+
+.btnBorrar {
+  background-color: #ca457a;
+  color: white;
+  border: none;
+  padding: .1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: 'PT Mono', monospace;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btnBorrar img {
+  width: 5.1rem;
+}
+
+.btnBorrar:hover {
+  background-color: #ca658d;
+}
+
+.btnAgregar {
+  background-color: #66c266;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btnAgregar img {
+  width: 2rem;
+}
+
+.btnAgregar:hover {
+  background-color: #55a255;
+}
+
+input[type="checkbox"] {
+  transform: scale(3);
+}
+
+.importante {
+  background-color: rgb(218, 199, 54);
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.divTarea {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.divCheckbox {
+  display: inline-block;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #333;
+  font-size: 1rem;
+}
+/* Checkbox*/
+.checkbox-wrapper-22 .switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.checkbox-wrapper-22 .switch input {
+  display:none;
+}
+
+.checkbox-wrapper-22 .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+.checkbox-wrapper-22 input:checked + .slider {
+  background-color: #66c266;
+}
+
+.checkbox-wrapper-22 input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+  border-radius: 50%;
+}
+/*Fin Checkbox*/
+
+@media screen and (max-width: 725px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+  }
+  
+  .nameTitle {
+    font-size: 40px;
+  }
+  
+  .inputTarea {
+    font-size: 1.5rem;
+  }
+  
+  .welcomeTitle {
+    font-size: 40px;
+  }
+  
+  .btnBorrar img {
+    width: 3rem;
+  }
+  
+  .btnAgregar img {
+    width: 1.5rem;
+  }
+
+  .divTarea {
+    display: flex;
+    flex-direction: column;
+  }
+}
